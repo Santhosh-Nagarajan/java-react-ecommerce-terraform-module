@@ -34,3 +34,5 @@ jobs:
 
     - name: Terraform Apply
       run: sudo terraform apply -var="number=${{ github.run_number }}"  --auto-approve
+    - name: Read Image_Count
+      run: cat image_count.txt
